@@ -1,0 +1,167 @@
+{
+  "users": [
+    {
+      "id": "admin-1",
+      "email": "admin@team.com",
+      "name": "Sarah Jenkins",
+      "role": "Admin",
+      "salt": "f60f64bbf63e6ae229dcf5d1e4e5ee61",
+      "passwordHash": "cdecb8af9a1df45117ad525d47051d7014e4b113c6daf0204fbaf561c75217e105b63e1fd0c5975629d29f11cfca6344f92196f4f3cb689f8d2f888a17c73e40",
+      "createdAt": "2026-05-01T08:00:00.000Z"
+    },
+    {
+      "id": "member-1",
+      "email": "jane@team.com",
+      "name": "Jane Miller",
+      "role": "Member",
+      "salt": "f60f64bbf63e6ae229dcf5d1e4e5ee61",
+      "passwordHash": "e96825f047af66a0c0096d1103c0e2ac95a227fe619b912c2c2173ec8cf4919a9a8aebf776a7c3285193eca27f83138de4acdf4ce0b68807f79557d13f188080",
+      "createdAt": "2026-05-02T09:00:00.000Z"
+    },
+    {
+      "id": "member-2",
+      "email": "jack@team.com",
+      "name": "Jack Davidson",
+      "role": "Member",
+      "salt": "f60f64bbf63e6ae229dcf5d1e4e5ee61",
+      "passwordHash": "e96825f047af66a0c0096d1103c0e2ac95a227fe619b912c2c2173ec8cf4919a9a8aebf776a7c3285193eca27f83138de4acdf4ce0b68807f79557d13f188080",
+      "createdAt": "2026-05-02T10:00:00.000Z"
+    },
+    {
+      "id": "member-3",
+      "email": "olivia@team.com",
+      "name": "Olivia Patel",
+      "role": "Member",
+      "salt": "f60f64bbf63e6ae229dcf5d1e4e5ee61",
+      "passwordHash": "e96825f047af66a0c0096d1103c0e2ac95a227fe619b912c2c2173ec8cf4919a9a8aebf776a7c3285193eca27f83138de4acdf4ce0b68807f79557d13f188080",
+      "createdAt": "2026-05-03T11:00:00.000Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "name": "Aero Web Redesign",
+      "description": "Migration to React & Tailwind CSS for performance optimization, high-contrast typography, and enhanced accessibility.",
+      "createdBy": "admin-1",
+      "createdAt": "2026-05-05T10:00:00.000Z"
+    },
+    {
+      "id": "proj-2",
+      "name": "Team Mobile Companion",
+      "description": "Preparing flutter/native companion widgets and offline synchronization architectures for critical workspace tasks.",
+      "createdBy": "admin-1",
+      "createdAt": "2026-05-10T11:00:00.000Z"
+    }
+  ],
+  "projectMembers": [
+    {
+      "projectId": "proj-1",
+      "userId": "admin-1",
+      "userEmail": "admin@team.com",
+      "userName": "Sarah Jenkins",
+      "userRole": "Admin"
+    },
+    {
+      "projectId": "proj-1",
+      "userId": "member-1",
+      "userEmail": "jane@team.com",
+      "userName": "Jane Miller",
+      "userRole": "Member"
+    },
+    {
+      "projectId": "proj-1",
+      "userId": "member-3",
+      "userEmail": "olivia@team.com",
+      "userName": "Olivia Patel",
+      "userRole": "Member"
+    },
+    {
+      "projectId": "proj-2",
+      "userId": "admin-1",
+      "userEmail": "admin@team.com",
+      "userName": "Sarah Jenkins",
+      "userRole": "Admin"
+    },
+    {
+      "projectId": "proj-2",
+      "userId": "member-2",
+      "userEmail": "jack@team.com",
+      "userName": "Jack Davidson",
+      "userRole": "Member"
+    },
+    {
+      "projectId": "proj-2",
+      "userId": "member-3",
+      "userEmail": "olivia@team.com",
+      "userName": "Olivia Patel",
+      "userRole": "Member"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-1",
+      "projectId": "proj-1",
+      "title": "Implement OAuth Signup Flows",
+      "description": "Secure JWT login endpoints, local storage sync tokens, and validation checks.",
+      "dueDate": "2026-05-24T18:00:00Z",
+      "priority": "High",
+      "status": "Review",
+      "assignedTo": "member-1",
+      "createdBy": "admin-1",
+      "createdAt": "2026-05-06T14:00:00.000Z",
+      "updatedAt": "2026-05-15T09:30:00.000Z"
+    },
+    {
+      "id": "task-2",
+      "projectId": "proj-1",
+      "title": "Design Landing Page Hero Section",
+      "description": "Create an elegant showcase section with space-grotesk styling and responsive negative spaces.",
+      "dueDate": "2026-05-18T18:00:00Z",
+      "priority": "Medium",
+      "status": "Done",
+      "assignedTo": "member-3",
+      "createdBy": "admin-1",
+      "createdAt": "2026-05-06T15:00:00.000Z",
+      "updatedAt": "2026-05-18T12:00:00.000Z"
+    },
+    {
+      "id": "task-3",
+      "projectId": "proj-2",
+      "title": "Configure CI/CD Automation Pipelines",
+      "description": "Set up fast builds, lint validations on pushes, and automated regression deployments.",
+      "dueDate": "2026-05-19T18:00:00Z",
+      "priority": "High",
+      "status": "Todo",
+      "assignedTo": "member-2",
+      "createdBy": "admin-1",
+      "createdAt": "2026-05-11T09:00:00.000Z",
+      "updatedAt": "2026-05-11T09:00:00.000Z"
+    },
+    {
+      "id": "task-4",
+      "projectId": "proj-1",
+      "title": "Write Unit Tests for Auth Middleware",
+      "description": "Provide rigorous mocking setups for standard cookies and sign verification layers.",
+      "dueDate": "2026-05-28T18:00:00Z",
+      "priority": "Low",
+      "status": "InProgress",
+      "assignedTo": "member-1",
+      "createdBy": "admin-1",
+      "createdAt": "2026-05-07T10:00:00.000Z",
+      "updatedAt": "2026-05-12T16:00:00.000Z"
+    },
+    {
+      "id": "task-5",
+      "projectId": "proj-2",
+      "title": "Verify Play Store Developer Console credentials",
+      "description": "Aesthetic check on standard licensing agreements and account metadata listings.",
+      "dueDate": "2026-05-15T18:00:00Z",
+      "priority": "Medium",
+      "status": "Done",
+      "assignedTo": "admin-1",
+      "createdBy": "admin-1",
+      "createdAt": "2026-05-11T10:00:00.000Z",
+      "updatedAt": "2026-05-14T11:00:00.000Z"
+    }
+  ]
+}
